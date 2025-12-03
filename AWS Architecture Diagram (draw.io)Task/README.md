@@ -1,1 +1,1 @@
-
+Users access the application via AWS WAF and an Application Load Balancer (ALB), which routes traffic to EC2 instances running in an Auto Scaling Group in private subnets. Offloading static assets to S3 + CloudFront reduces load on backend servers. The application connects to a highly available Multi-AZ RDS/Aurora database and ElastiCache Redis for caching to improve performance. A NAT Gateway provides secure outbound access from private subnets. Security is managed by Security Groups and Network ACLs, and monitoring and logging are centralized using CloudWatch.
